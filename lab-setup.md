@@ -44,8 +44,9 @@ sudo apt install net-tools
 sudo apt install openssh-server
 ```
 
-
-/etc/systemd/resolved.conf
+update two files
+-/etc/resolv.conf
+-/etc/systemd/resolved.conf
 ```
 [Resolve]
 DNS=192.168.1.232
