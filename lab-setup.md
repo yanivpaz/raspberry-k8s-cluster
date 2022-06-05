@@ -1,5 +1,14 @@
 # Lab setup
 
+## High level design 
+https://datatracker.ietf.org/doc/html/rfc1918
+10.0.0.1 - 10.0.0.100
+10.0.0.100 - 10.0.0.250
+
+## Windows setup
+set static ip to the machine
+10.0.0.2
+
 ## Cisco setup
 1. Change defualt password
 
@@ -9,14 +18,17 @@
 ```
 configure terminal
 interface vlan1
-ip add 192.168.1.250 255.255.255.0
+ip add 10.0.0.1 255.255.255.0
 ```
-3.2 from switch UI enable DHCP   
+3.2 from switch UI enable DHCP  
 
-## Raspberrys setup
+4. Create DHCP network pool 
+range should be 10.0.0.100 - 10.0.0.250 
 
-Ubuntu 22.04
-Run wizard Ubuntu - named nodes as node01
+## Raspberry setup
+
+un wizard  - named nodes as node[01-03]
+
 ```
 sudo apt install net-tools
 sudo apt install openssh-server
