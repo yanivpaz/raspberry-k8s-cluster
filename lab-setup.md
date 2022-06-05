@@ -5,25 +5,25 @@ https://datatracker.ietf.org/doc/html/rfc1918
 10.0.0.1 - 10.0.0.100
 10.0.0.100 - 10.0.0.250
 
+
+## Router setup
+
+192.168.1.2-192.168.1.230
+
 ## Windows setup
-set static ip to the machine
-10.0.0.2
+Set static ip to the machine
+192.168.1.232
 
 ## Cisco setup
 1. Change defualt password
 
 2. Enable ssh  ( from console ) 
-3. Enable dhcp  
-3.1 ssh switch and run   
-```
-configure terminal
-interface vlan1
-ip add 10.0.0.1 255.255.255.0
-```
-3.2 from switch UI enable DHCP  
+3. Update device IP to be 192.168.1.231
+4. Enable dhcp  
+
 
 4. Create DHCP network pool 
-range should be 10.0.0.100 - 10.0.0.250 
+range should be 192.168.1.235 - 192.168.1.250
 
 ## Raspberry setup
 
