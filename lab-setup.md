@@ -3,8 +3,8 @@
 ## High level design 
 https://datatracker.ietf.org/doc/html/rfc1918
 192.168.1.231 - Switch 
-192.168.1.232 - DNS
-192.168.1.235 - 192.168.1.250 - nodes 
+192.168.1.232 - DNS  
+192.168.1.235 - 192.168.1.250 - nodes   
 
 ## Router setup
 Configure DHCP to use only below 
@@ -44,7 +44,7 @@ sudo apt install openssh-server
 ## DNS setup
 
 install server version 32 bit
-
+sudo netplan apply dns/netplan.yaml
 ```
 sudo ip route add default via 192.168.1.1 
 ```
