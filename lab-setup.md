@@ -45,6 +45,16 @@ sudo apt install openssh-server
 ```
 
 
+/etc/systemd/resolved.conf
+```
+[Resolve]
+DNS=192.168.1.232
+FallbackDNS=8.8.8.8
+```
+service systemd-resolved restart 
+sudo resolvectl status
+
+
 ## DNS setup
 
 install server version 32 bit
