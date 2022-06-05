@@ -45,16 +45,3 @@ sudo apt install openssh-server
 
 install server version 32 bit
 
-
-```
-sudo apt install net-tools # ifconfig 
-sudo apt install openssh-server #  enable ssh 
-sudo apt install network-manager  #  nmcli
-sudo hostnamectl set-hostname dns 
-```
-
-```
-git clone https://github.com/yanivpaz/raspberry-k8s-cluster.git
-sudo cp  ~/raspberry-k8s-cluster/dns/netplan.yaml /etc/netplan/50-cloud-init.yaml
-```
-
