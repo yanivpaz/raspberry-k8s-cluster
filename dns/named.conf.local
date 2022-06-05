@@ -1,0 +1,20 @@
+zone "computingforgeeks.local" IN { // Domain name
+    
+      type master; // Primary DNS
+
+     file "/etc/bind/forward.computingforgeeks.local.db"; // Forward lookup file
+
+     allow-update { none; }; // Since this is the primary DNS, it should be none.
+    
+};
+zone "10.16.172.in-addr.arpa" IN { //Reverse lookup name, should match your network in reverse order
+
+     type master; // Primary DNS
+
+     file "/etc/bind/reverse.computingforgeeks.local.db"; //Reverse lookup file
+
+     allow-update { none; }; //Since this is the primary DNS, it should be none.
+
+    
+
+};
