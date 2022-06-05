@@ -46,6 +46,10 @@ sudo apt install openssh-server
 install server version 32 bit
 
 ```
+sudo ip route add default via 192.168.1.1 
+```
+
+```
 sudo apt install net-tools # ifconfig 
 sudo apt install openssh-server #  enable ssh 
 sudo apt install network-manager  #  nmcli
