@@ -4,8 +4,8 @@
 1. Change defualt password
 
 2. Enable ssh  ( from console ) 
-3. Enable dhcp
-3.1 ssh switch and run 
+3. Enable dhcp  
+3.1 ssh switch and run   
 ```
 configure terminal
 interface vlan1
