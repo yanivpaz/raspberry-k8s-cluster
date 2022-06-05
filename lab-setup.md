@@ -14,6 +14,11 @@ https://datatracker.ietf.org/doc/html/rfc1918
 Set static ip to the machine
 192.168.1.232
 
+
+C:\WINDOWS\system32>route add 0.0.0.0 mask 0.0.0.0 192.168.1.1 metric 30
+ OK!
+
+
 ## Cisco setup
 1. Change defualt password
 
