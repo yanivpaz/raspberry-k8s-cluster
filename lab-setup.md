@@ -2,12 +2,12 @@
 
 ## High level design 
 https://datatracker.ietf.org/doc/html/rfc1918
-10.0.0.1 - 10.0.0.100
-10.0.0.100 - 10.0.0.250
-
+192.168.1.231 - Switch 
+192.168.1.232 - DNS
+192.168.1.235 - 192.168.1.250 - nodes 
 
 ## Router setup
-
+Configure DHCP to use only below 
 192.168.1.2-192.168.1.230
 
 ## Windows setup
