@@ -27,9 +27,21 @@ range should be 10.0.0.100 - 10.0.0.250
 
 ## Raspberry setup
 
-un wizard  - named nodes as node[01-03]
+install desktop version 64 bit
+named nodes as node[01-03]
 
 ```
 sudo apt install net-tools
 sudo apt install openssh-server
+```
+
+
+## DNS setup
+
+install server version 32 bit
+
+```
+sudo apt install net-tools 
+sudo apt install openssh-server
+sudo apt install network-manager 
 ```
