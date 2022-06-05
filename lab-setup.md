@@ -31,7 +31,7 @@ install desktop version 64 bit
 named nodes as node[01-03]
 
 ```
-sudo apt install net-tools
+sudo apt install net-tools 
 sudo apt install openssh-server
 ```
 
@@ -41,7 +41,8 @@ sudo apt install openssh-server
 install server version 32 bit
 
 ```
-sudo apt install net-tools 
-sudo apt install openssh-server
-sudo apt install network-manager 
+sudo apt install net-tools # ifconfig 
+sudo apt install openssh-server #  enable ssh 
+sudo apt install network-manager  #  nmcli
+sudo hostnamectl set-hostname dns 
 ```
