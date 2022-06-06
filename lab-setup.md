@@ -44,15 +44,19 @@ sudo apt install net-tools
 sudo apt install openssh-server
 ```
 
-update two files
+service systemd-resolved stop 
+service systemd-resolved disable
 -/etc/resolv.conf
+
+
+
 -/etc/systemd/resolved.conf
 ```
 [Resolve]
 DNS=192.168.1.232
 FallbackDNS=8.8.8.8
 ```
-service systemd-resolved restart 
+
 sudo resolvectl status
 
 
