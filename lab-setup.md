@@ -38,10 +38,17 @@ C:\WINDOWS\system32>route add 0.0.0.0 mask 0.0.0.0 192.168.1.1 metric 30
 
 install desktop version 64 bit
 named nodes as node[01-03]
+using networkmanager 
 
 ```
 sudo apt install net-tools 
 sudo apt install openssh-server
+```
+
+### Default route 
+TODO: persist
+```
+route add default gw 192.168.1.1 eth0
 ```
 
 ### DNS option 1
