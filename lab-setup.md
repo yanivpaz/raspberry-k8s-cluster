@@ -44,9 +44,12 @@ sudo apt install net-tools
 sudo apt install openssh-server
 ```
 
+```
 service systemd-resolved stop 
 service systemd-resolved disable
--/etc/resolv.conf
+change nameserver 192.168.1.232 in /etc/resolv.conf
+
+```
 
 
 
