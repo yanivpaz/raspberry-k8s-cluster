@@ -44,26 +44,27 @@ sudo apt install net-tools
 sudo apt install openssh-server
 ```
 
+### DNS option 1
 ```
 systemctl stop systemd-resolved  
 systemctl disable systemd-resolved 
 change nameserver 192.168.1.232 in /etc/resolv.conf
-
 ```
 
 
-
--/etc/systemd/resolved.conf
+### DNS option 2 - to check not working 
+/etc/systemd/resolved.conf
 ```
 [Resolve]
 DNS=192.168.1.232
 FallbackDNS=8.8.8.8
 ```
 
+run 
+```
 sudo resolvectl status
+```
 
+## DNS server setup
 
-## DNS setup
-
-install server version 32 bit
-
+see [here](dns/README.md)
