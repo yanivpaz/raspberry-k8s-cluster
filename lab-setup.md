@@ -45,8 +45,8 @@ sudo apt install openssh-server
 ```
 
 ```
-service systemd-resolved stop 
-service systemd-resolved disable
+systemctl stop systemd-resolved  
+systemctl disable systemd-resolved 
 change nameserver 192.168.1.232 in /etc/resolv.conf
 
 ```
