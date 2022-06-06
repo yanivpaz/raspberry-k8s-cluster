@@ -1,5 +1,7 @@
 ## DNS setup 
 
+
+
 ## Install packages 
 ```
 sudo apt install net-tools # ifconfig 
@@ -33,4 +35,9 @@ https://computingforgeeks.com/configure-master-bind-dns-server-on-ubuntu/
 resolvectl status 
 ```
 
-
+## Troubleshooting
+sshd server can not start 
+```
+sshd: no hostkeys available -- exiting
+```
+solution : run ssh-keygen -A
