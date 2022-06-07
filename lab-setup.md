@@ -37,7 +37,7 @@ C:\WINDOWS\system32>route add 0.0.0.0 mask 0.0.0.0 192.168.1.1 metric 30
 ## Raspberry setup
 
 install desktop version 64 bit
-named nodes as node[01-03]
+named nodes as node[01-03] # hostnamectl set-hostname 
 using networkmanager 
 
 ```
