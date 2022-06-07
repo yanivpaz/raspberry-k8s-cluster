@@ -29,8 +29,9 @@ Set static ip to the machine
 192.168.1.232
 
 
-C:\WINDOWS\system32>route add 0.0.0.0 mask 0.0.0.0 192.168.1.1 metric 30
- OK!
+```
+route add 0.0.0.0 mask 0.0.0.0 192.168.1.1 
+```
 
 
 
@@ -40,6 +41,7 @@ install desktop version 64 bit
 named nodes as node[01-03] # hostnamectl set-hostname 
 using networkmanager 
 
+### packages 
 ```
 sudo apt install net-tools 
 sudo apt install openssh-server
@@ -49,46 +51,40 @@ sudo apt install openssh-server
 
 ```
 sudo nmcli connection modify "Wired connection 1" ipv4.adress 0.0.0.0/0
-sudo nmcli connection modify "Wired connection 1" ipv4.gateway 192.168.1.231 
-sudo nmcli connection Wired connection 1"
-OR
+sudo nmcli connection modify "Wired connection 1" ipv4.gateway 192.168.1.1
+sudo nmcli connection modify "Wired connection 1" ipv4.dns 192.168.1.232
+```
+
+
+## DNS server setup
+see [here](dns/README.md)
+
+
+
+
+
+
+
+
+
+
+### Not needed 
+
+```
 route add default gw 192.168.1.1 eth0
-```
-
-```
-sudo nmcli con mod ipv4.dns 192.168.1.232
-```
-
-
-
-
-
-to check 
-### DNS option 1
-```
 systemctl stop systemd-resolved  
 systemctl disable systemd-resolved 
 change nameserver 192.168.1.232 in /etc/resolv.conf
-OR
-
-```
 
 
-
-
-### DNS option 2 - to check not working 
+-- DNS option 2 - to check not working 
 /etc/systemd/resolved.conf
-```
+
 [Resolve]
 DNS=192.168.1.232
 FallbackDNS=8.8.8.8
-```
-
 run 
-```
 sudo resolvectl status
 ```
 
-## DNS server setup
 
-see [here](dns/README.md)
