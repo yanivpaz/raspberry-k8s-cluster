@@ -47,6 +47,8 @@ sudo apt install openssh-server
 
 ### Default route 
 TODO: persist
+sudo nmcli connection modify "Wired connection 1" ipv4.address "0.0.0.0/24" ipv4.gateway "192.168.1.1"
+
 nmcli connection modify <name> +ipv4.routes <destination> ipv4.gateway <gateway>
 
 ```
