@@ -53,13 +53,18 @@ OR
 route add default gw 192.168.1.1 eth0
 ```
 
+```
+sudo nmcli con mod ipv4.dns 192.168.1.232
+```
+
+to check 
 ### DNS option 1
 ```
 systemctl stop systemd-resolved  
 systemctl disable systemd-resolved 
 change nameserver 192.168.1.232 in /etc/resolv.conf
 OR
-sudo nmcli con mod ipv4.dns 192.168.1.232
+
 ```
 
 
