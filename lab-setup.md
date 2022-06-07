@@ -48,7 +48,9 @@ sudo apt install openssh-server
 ### Default route 
 
 ```
-sudo nmcli connection modify "Wired connection 1" ipv4.gateway 192.168.1.1  
+sudo nmcli connection modify "Wired connection 1" ipv4.adress 0.0.0.0/0
+sudo nmcli connection modify "Wired connection 1" ipv4.gateway 192.168.1.231 
+sudo nmcli connection Wired connection 1"
 OR
 route add default gw 192.168.1.1 eth0
 ```
@@ -56,6 +58,10 @@ route add default gw 192.168.1.1 eth0
 ```
 sudo nmcli con mod ipv4.dns 192.168.1.232
 ```
+
+
+
+
 
 to check 
 ### DNS option 1
