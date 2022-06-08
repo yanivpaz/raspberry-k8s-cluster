@@ -43,7 +43,7 @@ using networkmanager
 
 
 Networkmanager update systemed-resolved using dbus 
-( no need to update /etc/systemd/resolved.conf which is global configuration ) 
+( no need to update /etc/systemd/resolved.conf which is global configuration - see https://youtu.be/DtFjrJdnWAU?t=1399 ) 
 
 ### packages 
 ```
