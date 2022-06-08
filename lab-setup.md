@@ -44,6 +44,7 @@ using networkmanager
 
 Networkmanager update systemed-resolved using dbus 
 ( no need to update /etc/systemd/resolved.conf which is global configuration - see https://youtu.be/DtFjrJdnWAU?t=1399 ) 
+see also : https://unix.stackexchange.com/questions/612416/why-does-etc-resolv-conf-point-at-127-0-0-53
 
 ### packages 
 ```
