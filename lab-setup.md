@@ -43,6 +43,7 @@ using networkmanager
 
 
 Networkmanager update systemed-resolved using dbus 
+( no need to update /etc/systemd/resolved.conf which is global configuration ) 
 
 ### packages 
 ```
@@ -87,7 +88,7 @@ change nameserver 192.168.1.232 in /etc/resolv.conf
 DNS=192.168.1.232
 FallbackDNS=8.8.8.8
 run 
-sudo resolvectl status
+sudo resolvectl status # its acutally systemed-resolved ?
 ```
 
 
