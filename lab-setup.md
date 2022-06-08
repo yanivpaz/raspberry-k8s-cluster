@@ -41,6 +41,9 @@ install desktop version 64 bit
 named nodes as node[01-03] # hostnamectl set-hostname 
 using networkmanager 
 
+
+Networkmanager update systemed-resolved using dbus 
+
 ### packages 
 ```
 sudo apt install net-tools 
